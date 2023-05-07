@@ -1,0 +1,39 @@
+﻿<UserControl
+    x:Class="Labb3_NET22.Views.MainMenuView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Labb3_NET22.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="clr-namespace:Labb3_NET22.ViewModels"
+    d:DataContext="{d:DesignInstance viewModels:MainMenuViewModel}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <UserControl.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#65B4EC" />
+            <GradientStop Offset="1" Color="#2D5069" />
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid Style="{StaticResource MainGridStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2.5*" />
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="1" StretchDirection="Both">
+            <StackPanel
+                Grid.Row="1"
+                Margin="15"
+                VerticalAlignment="Center">
+                <Button Command="{Binding PlayCommand}" Content="Play Quiz" />
+                <Button Command="{Binding CreateCommand}" Content="Create Quiz" />
+                <Button Command="{Binding EditCommand}" Content="Edit Quiz" />
+                <Button Command="{Binding ExitCommand}" Content="Exit" />
+            </StackPanel>
+        </Viewbox>
+        <Viewbox Stretch="Uniform" StretchDirection="Both">
+            <TextBlock Style="{StaticResource HeaderStyle}" Text="Quizly" />
+        </Viewbox>
+    </Grid>
+</UserControl>
