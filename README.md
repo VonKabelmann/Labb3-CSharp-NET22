@@ -1,18 +1,10 @@
-# README!!!!!!
+# Labb3 C# .NET
 
-Har haft problem med att få listorna uppdaterade korrekt efter att jag implementerade GetQuizFromFileAsync() och GetAllQuizzesFromFileAsync(). 
-Listorna uppdateras korrekt om man går tillbaka till main menu och sedan in i en meny med en lista igen. Får tyvärr inte ordning på buggen trots många timmars försök.
+This was a project done as part of the "Programmering med C#" course at IT-Högskolan.
 
-Första gången man startar appen kommer den skapa och lagra ett hårdkodat Default Quiz i /appdata/local/Quizly. Förutom den tidigare nämnda buggen så verkar applikationen att fungera som den ska.
+The task was to create a WPF application in which the user could create and play through quizzes. The application saves the quizzes as JSON documents localy in a folder called Quizly in /appdata/local/. When you first start the application it will check if a "DefaultQuiz.json" file exists and if it cannot find it the application will create it containing a couple of default questions. 
 
-Redovisning för min planering ligger i mappen "Planering" som finns i samma mapp som .sln filen.
-
-Tyvärr fick jag inte med något påskägg i denna Labb. Jag får försöka ligga i lite mer på nästa labb så att jag hinner slänga in något roligt där. 
-
-Tack för all hjälp, Niklas!
-
-
-
+The instructions given to us for the assignment were the following (in Swedish):
 
 # Lab3 – Quiz game!
 
